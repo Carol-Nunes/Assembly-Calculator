@@ -38,7 +38,7 @@
    <string>Assembly_Calculator</string>
   </property>
   <property name="layoutDirection">
-   <enum>Qt::LayoutDirection::LeftToRight</enum>
+   <enum>Qt::LeftToRight</enum>
   </property>
   <property name="styleSheet">
    <string notr="true">QWindget{
@@ -171,7 +171,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Orbitron</family>
+      <family>Segoe UI</family>
       <pointsize>-1</pointsize>
       <bold>true</bold>
      </font>
@@ -181,8 +181,9 @@
 
 	color: white;
 	font-size: 35px;
-	font-family: &quot;Orbitron&quot;, sans-serif;
-	 font-weight: bold;
+	font-family: &quot;Segoe UI&quot;, sans-serif;
+	font-weight: bold;
+	text-align: center;
 
 
 }</string>
@@ -191,30 +192,7 @@
      <string>Calculadora</string>
     </property>
     <property name="textFormat">
-     <enum>Qt::TextFormat::PlainText</enum>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="expressao">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>109</y>
-      <width>490</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QTextEdit{
-
-	background-color: #6633ff;
-
-}</string>
+     <enum>Qt::PlainText</enum>
     </property>
    </widget>
    <widget class="QPushButton" name="tangente">
@@ -292,6 +270,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -315,6 +299,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -338,6 +328,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -361,6 +357,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -384,6 +386,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -407,6 +415,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -430,6 +444,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -453,6 +473,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -476,6 +502,12 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+	 width: 80px;
+    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: darkgray;
 }</string>
     </property>
     <property name="text">
@@ -636,7 +668,7 @@ QPushButton:hover {
      </rect>
     </property>
     <property name="layoutDirection">
-     <enum>Qt::LayoutDirection::LeftToRight</enum>
+     <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -680,7 +712,7 @@ QPushButton:hover {
     </property>
     <property name="font">
      <font>
-      <family>Orbitron</family>
+      <family>Segoe UI</family>
       <pointsize>-1</pointsize>
       <bold>true</bold>
      </font>
@@ -691,8 +723,8 @@ QPushButton:hover {
 	background-color: #a68cf2;
 	font-size: 15px;
 	color: white;
-	font-family: &quot;Orbitron&quot;, sans-serif;
-	 font-weight: bold;
+	font-family: &quot;Segoe UI&quot;, sans-serif;
+	font-weight: bold;
 
 }</string>
     </property>
@@ -715,8 +747,8 @@ QPushButton:hover {
 	background-color: #a68cf2;
 	font-size: 15px;
 	color: white;
-	font-family: &quot;Orbitron&quot;, sans-serif;
-	 font-weight: bold;
+	font-family: &quot;Segoe UI&quot;, sans-serif;
+	font-weight: bold;
 
 }</string>
     </property>
@@ -858,8 +890,8 @@ QPushButton:hover {
 	background-color: #a68cf2;
 	font-size: 15px;
 	color: white;
-	font-family: &quot;Orbitron&quot;, sans-serif;
-	 font-weight: bold;
+	font-family: &quot;Segoe UI&quot;, sans-serif;
+	font-weight: bold;
 
 }</string>
     </property>
@@ -895,7 +927,7 @@ QPushButton:hover {
      <rect>
       <x>10</x>
       <y>240</y>
-      <width>111</width>
+      <width>51</width>
       <height>41</height>
      </rect>
     </property>
@@ -936,6 +968,54 @@ QPushButton:hover {
      <string>PI</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="expressao">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>491</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #7B4FFF;
+    color: white;
+    border: 2px solid #5D3FD3; 
+    border-radius: 20px;
+    padding: 10px;
+    font: bold 20px 'Segoe UI';
+    selection-background-color: #A780FF;
+}
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fatorial">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>240</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #586B88;     /* Cinza azulado */
+    color: #ecf0f1;                /* Texto claro */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>n!</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -943,7 +1023,7 @@ QPushButton:hover {
      <x>0</x>
      <y>0</y>
      <width>512</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
