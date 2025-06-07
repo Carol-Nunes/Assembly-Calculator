@@ -38,6 +38,9 @@ else()
     else()
         add_executable(Assembly_Calculator
             ${PROJECT_SOURCES}
+            assembly_operations.h
+            assembly_operations.cpp
+            assembly_operations.cpp
         )
     endif()
 endif()
