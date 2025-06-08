@@ -35,4 +35,6 @@ float calcularArcoSeno(float a, int isRadiano);
 
 float calcularArcoCosseno(float a, int isRadiano);
 
+float calcularFatorial(int n);
+
 #endif // ASSEMBLY_OPERATIONS_H

@@ -499,3 +499,37 @@ float calcularArcoCosseno(float a, int isRadiano)
     return resultado;
 
 }
+
+
+float calcularFatorial(int n)
+{
+    float resultado = 1.0f;
+
+    __asm {
+
+        mov ecx, n // Move n para ecx
+        test ecx, ecx //Verifica se n = 0
+        jz fim // Se n = 0, é dado um salto para "fim"
+
+        fld1 // Carrega 1 no topo da pilha
+
+    loop_fatorial:
+
+        fild dword ptr [n]   // Converte n para float e carrega na pilha
+        fmulp st(1), st(0)    // Multiplica pelo acumulador e dá um pop
+        dec dword ptr [n]    // Decrementa n
+		    jnz loop_fatorial // Se não deu zero, o loop continua
+
+        /*
+        O topo é armazenado dentro de "resultado" e é dado um pop.
+        */
+        fstp resultado
+
+    fim:
+
+    }
+
+    return resultado;
+}
+
+
