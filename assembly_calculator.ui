@@ -73,7 +73,6 @@
    <property name="styleSheet">
     <string notr="true">QWidget {
     background-color: #1c2b3a;
-    border-radius: 20px;
 }
 </string>
    </property>
@@ -99,9 +98,12 @@
     background-color: #586B88;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -125,9 +127,12 @@
     background-color: #586B88;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -204,9 +209,12 @@
     background-color: #586B88;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -629,6 +637,10 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #5C6B84;
 }</string>
     </property>
     <property name="text">
@@ -655,6 +667,10 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #5C6B84;
 }</string>
     </property>
     <property name="text">
@@ -675,12 +691,16 @@ QPushButton:hover {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: #4B5870;     /* Cinza azulado */
+    background-color: #4B5870;    /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #5C6B84;
 }</string>
     </property>
     <property name="text">
@@ -707,6 +727,10 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #5C6B84;
 }</string>
     </property>
     <property name="text">
@@ -730,9 +754,12 @@ QPushButton:hover {
     background-color: #586B88;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -756,9 +783,12 @@ QPushButton:hover {
     background-color: #586B88;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -794,6 +824,10 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #7f53ff;
 }</string>
     </property>
     <property name="text">
@@ -801,6 +835,9 @@ QPushButton:hover {
     </property>
    </widget>
    <widget class="QTextEdit" name="modos">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -811,9 +848,8 @@ QPushButton:hover {
     </property>
     <property name="styleSheet">
      <string notr="true">QTextEdit{
-
 	background-color: #a68cf2;
-
+	border-radius: 20px
 }</string>
     </property>
    </widget>
@@ -886,14 +922,24 @@ QPushButton:hover {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: #586B88;    /* Cinza azulado */
+    background-color: #586B88;     /* Cinza azulado */
+    color: #ecf0f1;                /* Texto claro */
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+QPushButton {
+    background-color: #586B88;      /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
-	 width: 80px;
-    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -917,11 +963,21 @@ QPushButton:hover {
     background-color: #586B88;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+QPushButton {
+    background-color: #586B88;      /* Cinza azulado */
+    color: #ecf0f1;                /* Texto claro */
+    border: none;
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
-	 width: 80px;
-    height: 60px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -945,9 +1001,12 @@ QPushButton:hover {
     background-color: #586B88;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -974,10 +1033,14 @@ QPushButton:hover {
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #8B90B2;
 }</string>
     </property>
     <property name="text">
-     <string>,</string>
+     <string>.</string>
     </property>
    </widget>
    <widget class="QPushButton" name="sinal">
@@ -994,12 +1057,24 @@ QPushButton:hover {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
+    background-color: #586B88;     /* Cinza azulado */
+    color: #ecf0f1;                /* Texto claro */
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+QPushButton {
     background-color: #586B88;      /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -1033,6 +1108,10 @@ QPushButton:hover {
     margin: 0px;
 	padding: 0px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #FF7F99;
 }</string>
     </property>
     <property name="text">
@@ -1057,8 +1136,11 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 10px;
-    padding: 10px 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -1082,9 +1164,12 @@ QPushButton:hover {
     background-color: #586B88;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -1130,12 +1215,16 @@ QPushButton:hover {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: #586B88;     /* Cinza azulado */
+    background-color: #586B88;      /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
-    border-radius: 10px;
-    padding: 10px 10px;
+    border-radius: 12px;
+    padding: 10px;
     font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #46566e;
 }</string>
     </property>
     <property name="text">
@@ -1167,7 +1256,6 @@ QPushButton:hover {
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
