@@ -1,7 +1,5 @@
 #include "assembly_operations.h"
 
-#include<iostream>
-
 
 float adicao(float a, float b)
 {

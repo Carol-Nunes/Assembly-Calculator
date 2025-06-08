@@ -40,12 +40,12 @@
   <property name="layoutDirection">
    <enum>Qt::LeftToRight</enum>
   </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
   <property name="styleSheet">
    <string notr="true">QWindget{
-
-	background-color: white; 
-	border-radius: 20px;
-
+	background-color: #1c2b3a; 
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -77,23 +77,6 @@
 }
 </string>
    </property>
-   <widget class="QTextEdit" name="Fundo">
-    <property name="geometry">
-     <rect>
-      <x>-10</x>
-      <y>-10</y>
-      <width>780</width>
-      <height>261</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Georgia</family>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-   </widget>
    <widget class="QPushButton" name="seno">
     <property name="geometry">
      <rect>
@@ -107,6 +90,9 @@
      <font>
       <pointsize>-1</pointsize>
      </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -130,6 +116,9 @@
       <width>51</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -194,6 +183,9 @@
     <property name="textFormat">
      <enum>Qt::PlainText</enum>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QPushButton" name="tangente">
     <property name="geometry">
@@ -203,6 +195,9 @@
       <width>51</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -227,11 +222,20 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <family>Segoe UI</family>
       <pointsize>-1</pointsize>
      </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -239,9 +243,10 @@
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -262,15 +267,25 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -291,15 +306,25 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -320,15 +345,25 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -349,15 +384,25 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -378,15 +423,25 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -407,15 +462,25 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -436,15 +501,25 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -465,15 +540,25 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -494,15 +579,25 @@ QPushButton:hover {
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #34495e;     /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
-	 width: 80px;
+	width: 80px;
     height: 60px;
 }
 
@@ -522,6 +617,9 @@ QPushButton:hover {
       <width>51</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -546,6 +644,9 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #4B5870;    /* Cinza azulado */
@@ -568,6 +669,9 @@ QPushButton:hover {
       <width>51</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -592,6 +696,9 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #4B5870;    /* Cinza azulado */
@@ -615,6 +722,9 @@ QPushButton:hover {
       <height>41</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #586B88;     /* Cinza azulado */
@@ -637,6 +747,9 @@ QPushButton:hover {
       <width>51</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -667,6 +780,9 @@ QPushButton:hover {
       <height>151</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -689,7 +805,7 @@ QPushButton:hover {
      <rect>
       <x>10</x>
       <y>180</y>
-      <width>281</width>
+      <width>291</width>
       <height>41</height>
      </rect>
     </property>
@@ -701,7 +817,7 @@ QPushButton:hover {
 }</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="graus">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -732,10 +848,10 @@ QPushButton:hover {
      <string>Graus</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="radianos">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>100</x>
       <y>190</y>
       <width>91</width>
       <height>20</height>
@@ -765,6 +881,9 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #586B88;    /* Cinza azulado */
@@ -789,6 +908,9 @@ QPushButton:hover {
       <width>51</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -815,6 +937,9 @@ QPushButton:hover {
       <height>41</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #586B88;     /* Cinza azulado */
@@ -837,6 +962,9 @@ QPushButton:hover {
       <width>51</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -861,6 +989,9 @@ QPushButton:hover {
       <height>61</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #586B88;      /* Cinza azulado */
@@ -875,30 +1006,6 @@ QPushButton:hover {
      <string>+/-</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_5">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>190</y>
-      <width>81</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QRadioButton{
-
-	background-color: #a68cf2;
-	font-size: 15px;
-	color: white;
-	font-family: &quot;Segoe UI&quot;, sans-serif;
-	font-weight: bold;
-
-}</string>
-    </property>
-    <property name="text">
-     <string>Inversa</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="apagar">
     <property name="geometry">
      <rect>
@@ -908,13 +1015,23 @@ QPushButton:hover {
       <height>81</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #FF5F7E;    /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+    margin: 0px;
+	padding: 0px;
     font-size: 20px;
 }</string>
     </property>
@@ -930,6 +1047,9 @@ QPushButton:hover {
       <width>51</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -953,6 +1073,9 @@ QPushButton:hover {
       <width>51</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -1002,6 +1125,9 @@ QPushButton:hover {
       <height>41</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     background-color: #586B88;     /* Cinza azulado */
@@ -1016,16 +1142,30 @@ QPushButton:hover {
      <string>n!</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>512</width>
-     <height>26</height>
-    </rect>
-   </property>
+   <widget class="QRadioButton" name="inversa">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>190</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+
+	background-color: #a68cf2;
+	font-size: 15px;
+	color: white;
+	font-family: &quot;Segoe UI&quot;, sans-serif;
+	font-weight: bold;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Inversa</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
