@@ -204,6 +204,8 @@ double Polish_Notation::calcularPosfixa(const QString &posfixa)
         }
         else if (ehFuncao(token))
         {
+            if (pilha.size() < 1) return 0.0;
+
             double a = pilha.pop();
 
             pilha.push(this->aplicarOperacao(a, 0, token));
@@ -216,6 +218,14 @@ double Polish_Notation::calcularPosfixa(const QString &posfixa)
             double b = pilha.pop();
 
             pilha.push(this->aplicarOperacao(a, b, token));
+        }
+        else if (token == "!")
+        {
+            if (pilha.size() < 1) return 0.0;
+
+            double a = pilha.pop();
+
+            pilha.push(this->aplicarOperacao(a, 0, token));
         }
         else if (ehOperador(token[0]) && token.length() == 1)
         {
@@ -260,7 +270,7 @@ bool Polish_Notation::ehDigitoOuDecimal(QChar c)
 bool Polish_Notation::ehFuncao(QString token)
 {
     return token == "sin"  || token == "cos" || token == "tan" ||
-           token == "log"  || token == "!"   || token == "sqrt" ||
+           token == "log"  || token == "sqrt" ||
            token == "arcsin" || token == "arccos" || token == "arctan";
 }
 

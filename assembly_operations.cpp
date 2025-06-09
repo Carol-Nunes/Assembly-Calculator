@@ -385,6 +385,8 @@ float calcularFatorial(int n)
 {
     float resultado = 1.0f;
 
+    if (n == 0) return 1.0f;
+
     __asm {
             mov ecx, n // Move n para ecx
             test ecx, ecx //Verifica se n = 0
