@@ -4,16 +4,23 @@
 #include <QString>
 #include <QStack>
 #include <QMap>
+#include <QtMath>
 
 class Polish_Notation
 {
 public:
-    Polish_Notation();
+    Polish_Notation(bool emRadianos);
+
+    void setEmRadianos(bool emRadianos);
+
     QString toPosfixa(const QString &infixa);
+
     double calcularPosfixa(const QString &posfixa);
 
 private:
     QMap<QChar, int> precedencia;
+
+    bool emRadianos;
 
     bool ehOperador(QChar c);
 

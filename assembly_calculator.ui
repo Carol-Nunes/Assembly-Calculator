@@ -99,7 +99,7 @@
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 QPushButton:hover {
@@ -128,7 +128,7 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 QPushButton:hover {
@@ -210,7 +210,7 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 QPushButton:hover {
@@ -626,16 +626,23 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: #4B5870;     /* Cinza azulado */
+    background-color: #4B5870;    /* Cinza azulado */
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
 }
 
@@ -656,6 +663,12 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -665,7 +678,8 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
 }
 
@@ -686,6 +700,12 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -695,7 +715,8 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
 }
 
@@ -716,6 +737,12 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -725,7 +752,8 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
 }
 
@@ -883,6 +911,9 @@ QPushButton:hover {
     <property name="text">
      <string>Graus</string>
     </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QRadioButton" name="radianos">
     <property name="geometry">
@@ -907,6 +938,9 @@ QPushButton:hover {
     <property name="text">
      <string>Radianos</string>
     </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="parentese_1">
     <property name="geometry">
@@ -917,6 +951,12 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -926,15 +966,8 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 10px;
-    font-size: 20px;
-}
-
-QPushButton {
-    background-color: #586B88;      /* Cinza azulado */
-    color: #ecf0f1;                /* Texto claro */
-    border: none;
-    border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+	padding: 0px;
     font-size: 20px;
 }
 
@@ -955,6 +988,12 @@ QPushButton:hover {
       <height>51</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -964,15 +1003,8 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 10px;
-    font-size: 20px;
-}
-
-QPushButton {
-    background-color: #586B88;      /* Cinza azulado */
-    color: #ecf0f1;                /* Texto claro */
-    border: none;
-    border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+	padding: 0px;
     font-size: 20px;
 }
 
@@ -1022,6 +1054,12 @@ QPushButton:hover {
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -1031,7 +1069,8 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+    padding: 0px;
     font-size: 20px;
 }
 
@@ -1052,6 +1091,12 @@ QPushButton:hover {
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -1061,15 +1106,8 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 10px;
-    font-size: 20px;
-}
-
-QPushButton {
-    background-color: #586B88;      /* Cinza azulado */
-    color: #ecf0f1;                /* Texto claro */
-    border: none;
-    border-radius: 12px;
-    padding: 10px;
+	margin: 0px;
+	padding: 0px;
     font-size: 20px;
 }
 
@@ -1210,6 +1248,12 @@ QPushButton:hover {
       <height>41</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -1219,7 +1263,7 @@ QPushButton:hover {
     color: #ecf0f1;                /* Texto claro */
     border: none;
     border-radius: 12px;
-    padding: 10px;
+    padding: 0px;
     font-size: 20px;
 }
 
@@ -1231,7 +1275,7 @@ QPushButton:hover {
      <string>n!</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="inversa">
+   <widget class="QCheckBox" name="inversa">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -1241,7 +1285,7 @@ QPushButton:hover {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QRadioButton{
+     <string notr="true">QCheckBox{
 
 	background-color: #a68cf2;
 	font-size: 15px;

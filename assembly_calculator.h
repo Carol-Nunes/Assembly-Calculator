@@ -40,12 +40,55 @@ private slots:
 
     void on_expressao_returnPressed();
 
+    void on_soma_clicked();
+
+    void on_subtracao_clicked();
+
+    void on_multiplicacao_clicked();
+
+    void on_divisao_clicked();
+
+    void on_parentese_1_clicked();
+
+    void on_parentese_2_clicked();
+
+    void on_virgula_clicked();
+
+    void on_seno_clicked();
+
+    void on_cosseno_clicked();
+
+    void on_tangente_clicked();
+
+    void on_graus_clicked();
+
+    void on_radianos_clicked();
+
+
+    void on_inversa_clicked();
+
+    void on_pi_clicked();
+
+    void on_fatorial_clicked();
+
+    void on_exponenciacao_clicked();
+
+    void on_quadrado_clicked();
+
+    void on_log_clicked();
+
+    void on_raiz_clicked();
+
+    void on_sinal_clicked();
+
 private:
     Ui::Assembly_Calculator *ui;
 
+    bool modoInverso;
+
     double valorAtual;
 
-    Polish_Notation polishNotator;
+    Polish_Notation * polishNotator;
 
 };
 #endif // ASSEMBLY_CALCULATOR_H

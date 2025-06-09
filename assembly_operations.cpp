@@ -383,40 +383,53 @@ float calcularLog(float n, float x)
 
 float calcularFatorial(int n)
 {
-
-    float resultado;
+    float resultado = 1.0f;
 
     __asm {
+            mov ecx, n // Move n para ecx
+            test ecx, ecx //Verifica se n = 0
+            jz fim // Se n = 0, é dado um salto para "fim"
 
+            fld1 // Carrega 1 no topo da pilha
 
+        loop_fatorial:
+
+           fild dword ptr [n]   // Converte n para float e carrega na pilha
+           fmulp st(1), st(0)    // Multiplica pelo acumulador e dá um pop
+           dec dword ptr [n]    // Decrementa n
+           jnz loop_fatorial // Se não deu zero, o loop continua
+
+            /*
+             * O topo é armazenado dentro de "resultado" e é dado um pop.
+            */
+
+        fim:
+            fstp resultado
     }
 
     return resultado;
-
 }
 
 
 float calcularArcoTangente(float a, int isRadiano)
 {
-
-    if(!isRadiano)
-    {
-        a = transformaGrauEmRadiano(a);
-    }
-
     float resultado;
 
     __asm {
 
             finit
-            fld1
             fld a
+            fld1
             fpatan //Calcula o valor do arctg(st(1) / st) = arctg(a / 1) = arctg (a)
             fstp resultado
     }
 
     return resultado;
 
+    if(!isRadiano)
+    {
+        resultado = transformaGrauEmRadiano(resultado);
+    }
 }
 
 
@@ -426,11 +439,6 @@ float calcularArcoTangente(float a, int isRadiano)
 */
 float calcularArcoSeno(float a, int isRadiano)
 {
-
-    if(!isRadiano)
-    {
-        a = transformaGrauEmRadiano(a);
-    }
 
     float resultado;
 
@@ -443,11 +451,11 @@ float calcularArcoSeno(float a, int isRadiano)
             fmul // st = a * a
 
             fld1 // st = 1 , st(1) = a^2
-            fsub // st = 1 - a^2
+            fsubr // st(0) = st(0) - st(1) => 1 - a^2. O resultado fica em st(1) e o st(0) antigo é removido.
             fsqrt // st = sqrt(1 - a^2)
 
             fld a // st = a, st(1) = sqrt(1 - a^2)
-            fdiv // st = a / sqrt(1 - a^2)
+            fdivr // st(0) = st(0) / st(1) => a / sqrt(1 - a^2). Resultado em st(1).
 
             fld1
             /*
@@ -457,6 +465,11 @@ float calcularArcoSeno(float a, int isRadiano)
             fpatan
 
             fstp resultado
+    }
+
+    if (!isRadiano)
+    {
+        resultado = transformaGrauEmRadiano(resultado);
     }
 
     return resultado;
@@ -469,12 +482,8 @@ float calcularArcoSeno(float a, int isRadiano)
 float calcularArcoCosseno(float a, int isRadiano)
 {
 
-    if(!isRadiano)
-    {
-        a = transformaGrauEmRadiano(a);
-    }
-
     float resultado;
+
     float b = calcularArcoSeno(a, isRadiano);
 
     __asm {
@@ -496,40 +505,10 @@ float calcularArcoCosseno(float a, int isRadiano)
             fstp resultado
     }
 
-    return resultado;
-
-}
-
-
-float calcularFatorial(int n)
-{
-    float resultado = 1.0f;
-
-    __asm {
-
-        mov ecx, n // Move n para ecx
-        test ecx, ecx //Verifica se n = 0
-        jz fim // Se n = 0, é dado um salto para "fim"
-
-        fld1 // Carrega 1 no topo da pilha
-
-    loop_fatorial:
-
-        fild dword ptr [n]   // Converte n para float e carrega na pilha
-        fmulp st(1), st(0)    // Multiplica pelo acumulador e dá um pop
-        dec dword ptr [n]    // Decrementa n
-		    jnz loop_fatorial // Se não deu zero, o loop continua
-
-        /*
-        O topo é armazenado dentro de "resultado" e é dado um pop.
-        */
-        fstp resultado
-
-    fim:
-
+    if(!isRadiano)
+    {
+        resultado = transformaGrauEmRadiano(resultado);
     }
 
     return resultado;
 }
-
-
